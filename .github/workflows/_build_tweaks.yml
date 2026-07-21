@@ -47,6 +47,8 @@ jobs:
   build-tweaks:
     name: Build Tweaks
     runs-on: macos-latest
+    env:
+      HOMEBREW_NO_REQUIRE_TAP_TRUST: 1
 
     steps:
       - name: Install Dependencies
